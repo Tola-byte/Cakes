@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Noto+Sans+Display:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            font-family: 'Noto Sans Display', sans-serif;
+            margin : 0;
+            border: 0;
+           overflow:hidden;
+            height: 100vh;
+        }
+        #rightSide{
+            display: flex;
+            width: 34%;
+            flex-direction: row;
+            height: 0%;
+        }
+        .form{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background: linear-gradient( 35deg , brown , rgb(165, 49, 146));
+            overflow: none;
+            
+        }
+        form{
+         width : 65vw;
+         color: white;
+         padding-right:5%;
+         padding-left: 5%;
+         padding-top: 5%;
+         border-radius: 1%;
+         align-content: center;
+         margin-right: 3%;
+         margin-left: 3%;
+
+        }
+        h2{
+            text-align: center;
+        }
+        #name , #email , #number, #price {
+        border:none;
+        outline:none;
+        border-radius:5px;
+        height: 3vw;
+        width : 100%;
+        padding-left: 2%;
+        }
+        button{
+            color: white;
+            background: #854179;
+            height:4vw;
+            width: 103%;
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "rightSide">
+    <img src = "cakes.jpg" width = "" height="1000px">
+    </div>
+
+<div class = "form">
+    <br>
+    <form id="survey-form" action="/action_page.php">
+        <h2>Buy your Cakes</h2>
+        <br>
+        <div class="okay">
+         <label for="name-label">Name</label><br>
+         <input id= "name" type="text" placeholder="Enter your name" required>
+         <br>
+         <br>
+         <label for="email-label">Email</label><br>
+         <input id="email" type="email" placeholder="Enter your email" required><br>
+         <br>
+        <label for="number-label">Number</label><br>
+         <input id="number" type="number" placeholder="Age" min="1", max="150">
+         <br>
+         <br>
+         <label for="price-label">Enter Price</label><br>
+         <input id= "price" type="text" placeholder="Enter your price" required>
+         <br>
+         <br>
+         <button type="submit>">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
